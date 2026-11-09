@@ -1,40 +1,14 @@
-<!--
-  ==========================================================================
-  ALTSCHOOL AFRICA - SCHOOL OF ENGINEERING (ASSIGNMENT 1)
-  FILE: form.html
-  STUDENT: Adam Adebowale
-  ID: ALT/SOE/KAR/026/0228
-  TRACK: AI-Powered Fullstack Engineering
-  
-  HOW TO USE THIS SKELETON:
-  --------------------------------------------------------------------------
-  1. All texts from the AltSchool Create-Account portal screenshot are extracted below.
-  2. Follow each numbered TODO to type out the semantic and accessible HTML tags.
-  3. STRICTLY NO CSS: Do not add any styles, CSS files, or style attributes.
-  4. Ensure every <input> is paired with a <label for="..."> attribute.
-  ==========================================================================
--->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AltSchool Africa - Create Account Form</title>
 </head>
 
-<!--
-  TODO 1: BODY & FRAGMENT IDENTIFIER TARGET
-  - Keep id="top" on the <body> tag to allow the "Back to top" link to jump here.
--->
 <body id="top">
 
-  <!--
-    TODO 2: GLOBAL NAVIGATION (Identical to index.html)
-    - Instruction: Wrap in a <header> tag.
-    - Inside, add a <nav> containing an unordered list (<ul>) with <li> links:
-        1. Link to index.html (Profile)
-        2. Link to form.html (Application Form)
-  -->
   <header>
     <h1>AltSchool Africa - Application Portal</h1>
     <nav aria-label="Global Navigation">
@@ -47,21 +21,12 @@
 
   <hr>
 
-  <!--
-    TODO 3: BANNER / HERO INTRODUCTORY CONTENT (Extracted from Screenshot)
-    - Instruction: Wrap this supplementary branding content in an <aside> tag.
-    
-    EXTRACTED TEXT FROM SCREENSHOT:
-    - Alt_ School
-    - Africa’s Best Innovative Online School
-    - Our programmes are designed to adapt to your time, goals, and resources, empowering you to learn on your own terms.
-    - Accredited by ASIC (Accreditation Service for International Schools, Colleges, and Universities)
-  -->
+
   <aside aria-label="AltSchool Introduction">
     <p><strong>Alt_ School</strong></p>
     <h2>Africa’s Best Innovative Online School</h2>
     <p>
-      Our programmes are designed to adapt to your time, goals, and resources, 
+      Our programmes are designed to adapt to your time, goals, and resources,
       empowering you to learn on your own terms.
     </p>
     <p>
@@ -71,140 +36,75 @@
 
   <hr>
 
-  <!--
-    TODO 4: MAIN CONTENT LANDMARK
-    - Instruction: Wrap the entire form section inside a <main> tag.
-  -->
+
   <main>
 
-    <!--
-      TODO 5: SIGN UP / SIGN IN NAVIGATION
-      - Extracted from screenshot tabs: "Sign up" and "Sign in"
-    -->
     <nav aria-label="Authentication Options">
       <p>
         <strong>Sign up</strong> | <a href="#">Sign in</a>
       </p>
     </nav>
 
-    <!--
-      TODO 6: FORM HEADING & SUBTITLE
-      - Extracted from screenshot:
-        Title: Sign up
-        Subtitle: Create an account to get started on your learning journey
-    -->
+
     <section aria-labelledby="signup-heading">
       <h2 id="signup-heading">Sign up</h2>
       <p>Create an account to get started on your learning journey</p>
 
-      <!--
-        TODO 7: CERTIFICATE NAME WARNING CALLOUT
-        - Extracted from screenshot warning banner:
-          "Important: Your name will appear on your certificate exactly as entered"
-      -->
       <blockquote>
         <p>
           ⚠️ <strong>Important:</strong> Your name will appear on your certificate exactly as entered
         </p>
       </blockquote>
 
-      <!--
-        TODO 8: THE FORM ELEMENT
-        - Instruction: Wrap all input fields in <form action="#" method="POST">.
-        - Accessibility Rule: Every <input> MUST have a matching <label for="...">.
-      -->
-      <form action="#" method="POST">
 
-        <!-- FIELD 1: Email -->
+      <form action="#" method="post">
+
         <div>
           <label for="user-email">Email *</label><br>
-          <input 
-            type="email" 
-            id="user-email" 
-            name="email" 
-            placeholder="name@example.com"
-            value="adebowaleadam0@gmail.com"
-            required
-            autocomplete="email"
-          >
+          <input type="email" id="user-email" name="email" placeholder="name@example.com"
+            value="adebowaleadam0@gmail.com" required autocomplete="email">
         </div>
         <br>
 
-        <!-- FIELD 2: First Name -->
         <div>
           <label for="first-name">First name *</label><br>
-          <input 
-            type="text" 
-            id="first-name" 
-            name="firstName" 
-            placeholder="John" 
-            value="Adam"
-            required
-            autocomplete="given-name"
-          >
+          <input type="text" id="first-name" name="firstName" placeholder="John" value="Adam" required
+            autocomplete="given-name">
         </div>
         <br>
 
-        <!-- FIELD 3: Last Name -->
+
         <div>
           <label for="last-name">Last name *</label><br>
-          <input 
-            type="text" 
-            id="last-name" 
-            name="lastName" 
-            placeholder="Doe" 
-            value="Adebowale"
-            required
-            autocomplete="family-name"
-          >
+          <input type="text" id="last-name" name="lastName" placeholder="Doe" value="Adebowale" required
+            autocomplete="family-name">
         </div>
         <br>
 
-        <!-- FIELD 4: Phone Number -->
+
         <div>
           <label for="phone-number">Phone number *</label><br>
-          <input 
-            type="tel" 
-            id="phone-number" 
-            name="phoneNumber" 
-            placeholder="+1234567890" 
-            required
-            autocomplete="tel"
-          >
+          <input type="tel" id="phone-number" name="phoneNumber" placeholder="+1234567890" required autocomplete="tel">
         </div>
         <br>
 
-        <!-- FIELD 5: Password -->
+
         <div>
           <label for="user-password">Password *</label><br>
-          <input 
-            type="password" 
-            id="user-password" 
-            name="password" 
-            placeholder="•••••••••" 
-            required
-            minlength="8"
-            autocomplete="new-password"
-          >
+          <input type="password" id="user-password" name="password" placeholder="•••••••••" required minlength="8"
+            autocomplete="new-password">
         </div>
         <br>
 
-        <!--
-          TODO 9: TERMS & PRIVACY POLICY DISCLAIMER
-          - Extracted text from screenshot:
-            "By clicking Create account, I agree to Terms of Use and acknowledge that I have read the Privacy Policy."
-        -->
         <p>
-          By clicking Create account, I agree to 
-          <a href="https://altschoolafrica.com/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
-          and acknowledge that I have read the 
-          <a href="https://altschoolafrica.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+          By clicking Create account, I agree to
+          <a href="https://altschoolafrica.com/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms of
+            Use</a>
+          and acknowledge that I have read the
+          <a href="https://altschoolafrica.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy
+            Policy</a>.
         </p>
 
-        <!--
-          TODO 10: PRIMARY SUBMIT BUTTON
-          - Extracted from screenshot: "Create account ->"
-        -->
         <div>
           <button type="submit">Create account &rarr;</button>
         </div>
@@ -213,10 +113,6 @@
         <p>───────── OR ─────────</p>
         <br>
 
-        <!--
-          TODO 11: SOCIAL LOGIN BUTTON (GOOGLE)
-          - Extracted from screenshot: "Login with Google"
-        -->
         <div>
           <button type="button">Login with Google</button>
         </div>
@@ -226,10 +122,6 @@
 
     <hr>
 
-    <!--
-      TODO 12: FRAGMENT IDENTIFIER (SCROLL TO TOP)
-      - Link pointing to href="#top" to jump back to <body id="top">.
-    -->
     <p>
       <a href="#top">&uarr; Back to top</a>
     </p>
@@ -238,10 +130,7 @@
 
   <hr>
 
-  <!--
-    TODO 13: ACCESSIBLE FOOTER
-    - Must be at the bottom of both pages with your address and copyright.
-  -->
+
   <footer>
     <section>
       <h3>Contact Information</h3>
@@ -258,4 +147,5 @@
   </footer>
 
 </body>
+
 </html>
